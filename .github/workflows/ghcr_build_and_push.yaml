@@ -8,7 +8,7 @@ name: Publish docker image to ghcr.io
 on:
   workflow_dispatch:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "develop" ]
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ "master", "develop" ]
